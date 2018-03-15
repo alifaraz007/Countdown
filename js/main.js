@@ -1,6 +1,6 @@
 var countdown = document.querySelector(".countdown");
 //lunch date
-var launch = new Date('Jun 12, 2018, 15:00:00').getTime();
+var launch = new Date('Jun 12, 2020, 15:00:00').getTime();
 //ms interval
 var intvl = setInterval(function(){
     //current date
@@ -11,7 +11,7 @@ var intvl = setInterval(function(){
     var mins = Math.floor((distance)%(60*60*1000)/(1000*60));
     var seconds = Math.floor((distance)%(60*1000)/1000);
     //show result
-    countdown.innerHTML =  
+    countdown.innerHTML =
         `<div>${days}<span>days</span></div>
         <div>${hours}<span>hours</span></div>
         <div>${mins}<span>mins</span></div>
@@ -23,5 +23,5 @@ var intvl = setInterval(function(){
         countdown.style.color = "#eee";
         countdown.innerHTML = 'Lunched!';
     }
-    
+
 },1000)
